@@ -36,13 +36,7 @@ describe("AppComponent", () => {
   });
 
   describe("sinon timer", () => {
-    beforeEach(() => {
-      this.sandbox = sinon.sandbox.create();
-    });
 
-    afterEach(() => {
-      this.sandbox.restore();
-    });
 
     it("test ticks", () => {
       function testSinonFakeTimersWith(interval: number, ticks: number) {

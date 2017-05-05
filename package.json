@@ -39,8 +39,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "build": "tsc -p . & webpack",
-    "test": "jasmine",
+    "build": "webpack",
+    "test": "tsc & jasmine",
     "test:watch": "karma start"
   }
 }

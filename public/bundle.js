@@ -9524,7 +9524,7 @@ const React = __webpack_require__(80);
 const ReactDOM = __webpack_require__(98);
 const App_1 = __webpack_require__(182);
 ReactDOM.render(React.createElement(App_1.default, null), document.getElementById("root"));
-//# sourceMappingURL=index.js.map
+
 
 /***/ }),
 /* 82 */
@@ -22004,7 +22004,7 @@ class App extends React.Component {
     render() {
         return (React.createElement("div", { className: "App" },
             React.createElement("div", { className: "App-header" },
-                React.createElement("h2", null, "Welcome to React123")),
+                React.createElement("h2", null, "Welcome to React")),
             React.createElement("p", { className: "App-intro" },
                 "To get started, edit ",
                 React.createElement("code", null, "src/App.tsx"),
@@ -22012,7 +22012,7 @@ class App extends React.Component {
     }
 }
 exports.default = App;
-//# sourceMappingURL=App.js.map
+
 
 /***/ }),
 /* 183 */

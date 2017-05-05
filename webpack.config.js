@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: ["./src/index.js"]
+        app: ["./src/index.tsx"]
     },
     output: {
         path: path.resolve(__dirname, './public'),
@@ -11,15 +11,24 @@ module.exports = {
         publicPath: "/public/"
     },
     module: {
+
         loaders: [
             {
                 test: /\.json$/,
                 loader: 'json-loader'
+            },
+            {
+                test: /\.tsx?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
             }
         ]
     },
+
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"]
+    },
     plugins: [
-        new HtmlWebpackPlugin({ template: './public/index.html' })
     ],
     devServer: {
         historyApiFallback: true,
